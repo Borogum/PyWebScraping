@@ -73,11 +73,10 @@ class FifaWorldCupCrawler(object):
         r = requests.get(url, headers=self.headers)
         while (r.status_code != 200) and (retry < self.max_retries):
             retry += 1
-            print('Retrying "%s" (%d/%d)' % (url, retry, self.max_retries))
             r = requests.get(url)
             time.sleep(self.retry_wait)
         if retry == self.max_retries:
-            raise Exception('Unable to connect "%s"' % url)
+            raise Exception('Unable connect to "%s"' % url)
 
         return r.text
 
@@ -113,6 +112,7 @@ class FifaWorldCupCrawler(object):
             for exp in expressions:
                 if re.match(exp, line, re.IGNORECASE):
                     markers.append(n)
+            # Stop when all the interesting parts have been found
             if len(markers)==3:
                 break
 
@@ -218,9 +218,9 @@ class FifaWorldCupCrawler(object):
 
         ''' Crawler process '''
 
-        # Get all ids
+        # Get all matches' ids
         matches_ids = self.get_matches_ids()
-        # Parallelize
+        # Parallelize work
         pool = Pool(workers)
         results = pool.map_async(self.parse_match, matches_ids)
         pool.close()
@@ -229,13 +229,17 @@ class FifaWorldCupCrawler(object):
 
 
 
-
+#Entry point
 if __name__ == '__main__':
 
+    #Script folder
+    folder =  os.path.dirname(os.path.realpath(__file__))
     crawler = FifaWorldCupCrawler()
+    #Start crawler
     result = crawler.crawl(workers=4)
     # Save data into csv file
-    with open('../csv/worldcup.csv', 'w', newline='', encoding='utf-8') as csvfile:
+    with open(os.path.join(folder, '../csv/worldcup.csv'), 'w', newline='', \
+                                                   encoding='utf-8') as csvfile:
         writer = csv.DictWriter(csvfile, fieldnames=result[0].keys())
         writer.writeheader()
         for row in result:
