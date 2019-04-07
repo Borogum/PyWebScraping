@@ -2,7 +2,7 @@
 
 ## Descripción
 
-Esta práctica se ha realizado para la asignatura "Tipología y ciclo de vida de los datos", perteneciente al "Máster en Ciencia de Datos" de la Universitat Oberta de Catalunya. La práctica consiste en la aplicación de técnicas de web scraping (mediante el uso del lenguaje de programación Python) para extraer datos de la web [www.fifa.com](https://www.fifa.com) para generar un conjunto de datos.
+Esta práctica se ha realizado para la asignatura "Tipología y ciclo de vida de los datos", perteneciente al "Máster en Ciencia de Datos" de la Universitat Oberta de Catalunya. La práctica consiste en la aplicación de técnicas de web scraping (mediante el uso del lenguaje de programación Python) para extraer datos de la web [www.fifa.com](https://www.fifa.com) y generar un dataset a partir de ellos.
 
 ## Miembros del equipo
 
@@ -12,7 +12,7 @@ La actividad ha sido realizada de forma individual por **Darío M. García Carre
 
 * Código fuente: _"src/crawler.py"_.
 * Archivo de datos: _"csv/worldcup.csv"_.
-* Documentación: _"doc/pec2.pdf"_.
+* Documentación: _"doc/pra1.pdf"_.
 
 ## Recursos
 
