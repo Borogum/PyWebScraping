@@ -118,3 +118,8 @@ El código fuente se puede encontrar dentro de la carpeta "src".
 ### Dataset
 
 El dataset resultante se puede encontrar en la carpeta "csv".
+
+### Recursos
+
+* Subirats, L., Calvo, M. (2019). Web Scraping. Editorial UOC.
+* Lawson, R. (2015). Web Scraping with Python. Packt Publishing Ltd. Chapter 2. Scraping the Data.
