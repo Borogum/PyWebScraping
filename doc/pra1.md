@@ -104,7 +104,7 @@ El conjunto de datos podría ser utilizado en diferentes ámbitos. Algunos de el
 
     * __Generador de reseñas:__ Utilizando en conjunto las variables cuantitativas y las reseñas se podría intentar construir un sistema que generase reseñas de manera automática. Aunque seguramente se necesitarían más datos, el conjunto podría ser un punto de partida para estudiar la viabilidad del proyecto.
 
-    * __Estilos de juego:__ Podrían estudiarse los diferentes estilos de juego de las selecciones (con técnicas de clustering) y estudiar cuales son los más efectivos.
+    * __Estilos de juego:__ Podrían analizarse los diferentes estilos de juego de las selecciones (con técnicas de clustering) y estudiar cuales son los más efectivos.
 
 
 ### Licencia
