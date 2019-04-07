@@ -32,8 +32,8 @@ Cada registro se corresponde con un partido. Y para cada uno de ellos se han rec
 * __datetime__: Fecha y hora
 * __headline__: Titular resumen
 * __summary__: Reseña neutral
-* __summary_home__: Reseña de periodista local
-* __summary_away__: Reseña de periodista visitante
+* __summary_home__: Reseña del periodista local
+* __summary_away__: Reseña del periodista visitante
 * __goals_home__: Goles equipo local
 * __goals_away__: Goles equipo visitante
 * __attempts_home__: Lanzamientos equipo local
@@ -92,7 +92,20 @@ Me gustaría destacar la gran cantidad de información que la FIFA pone a dispos
 
 ### Inspiración
 
-# TODO
+El conjunto de datos podría ser utilizado en diferentes ámbitos. Algunos de ellos podrían ser:
+
+* __Periodismo:__ Los datos podrían ser usados para, por ejemplo, realizar un reportaje sobre el mundial que sacara a relucir los datos más curiosos/destacados.
+
+* __Almacén de datos:__ Los datos podrían ser cruzados con datos pertenecientes a otras fuentes para enriquecer un almacén de datos estadísticos.
+
+* __Minería de datos:__ En cuanto a su uso para proyectos de minería de datos podría ser interesante estudiar:
+
+    * __Sesgos en información:__ Podrían estudiarse la diferencias o similitudes entre las reseñas de cada uno de los periodistas (local/visitante) y la reseña neutral para extraer conclusiones sobre sesgos en el periodismo.
+
+    * __Generador de reseñas:__ Utilizando en conjunto las variables cuantitativas y las reseñas se podría intentar construir un sistema que generase reseñas de manera automática. Aunque seguramente se necesitarían más datos, el conjunto podría ser un punto de partida para estudiar la viabilidad del proyecto.
+
+    * __Estilos de juego:__ Podrían estudiarse los diferentes estilos de juego de las selecciones (con técnicas de clustering) y estudiar cuales son los más efectivos.
+
 
 ### Licencia
 
