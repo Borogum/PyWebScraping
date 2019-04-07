@@ -10,6 +10,6 @@
 module.exports = function (info) {
     return {
         height: '2cm',
-        contents: '<div style="text-align: right;"><strong>Tipología y ciclo de vida de los datos - PEC2 </strong></div>'
+        contents: '<div style="text-align: right;"><strong>Tipología y ciclo de vida de los datos - PRA1 </strong></div>'
     };
 };
